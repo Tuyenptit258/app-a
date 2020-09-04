@@ -12,12 +12,10 @@ app.get('/', (req,res)=>{
 })
 
 app.get('/login', function(req,res){
-    var duongDanFile1 = path.join(__dirname, "login.html")
-    res.sendFile(duongDanFile1)
+    res.render('login.ejs')
 })
 app.get('/register', function(req,res){
-    var duongDanFile2 = path.join(__dirname, "register.html")
-    res.sendFile(duongDanFile2)
+    res.render('register.ejs')
 })
 
 app.listen(process.env.PORT, function(){

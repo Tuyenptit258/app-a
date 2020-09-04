@@ -8,11 +8,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="http://localhost:5500/congkhai/home.css">
 </head>
 <body>
     <div class="container">
-         Content here 
+        <!-- Content here -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             
           
@@ -45,30 +45,33 @@
                 </li>
               </ul>
               
-              <form class="form-inline my-2 my-lg-0">
+              <form class="form-inline my-1 my-lg-0">
       
                 
                 <button class="btn btn-outline-success my-2 my-sm-0" type="Đăng kí"><a href="/register">Register</a></button>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="Đăng Xuất"><a href="/login">Logout</a></button>
+                
               </form>
+              <form action="/logout?_method=DELETE" method="POST">
+                <button type="submit">LogOut</button>
+            </form>
             </div>
           </nav>
 
       </div>
       <div class="container">
-        <!- Content here 
+        <!-- Content here -->
         <p>
 
         </p>
       </div>
       <div class="container">
-        <!- Content here 
+        <!-- Content here -->
         <p>
 
         </p>
       </div>
       <div class="container">
-        <!- Content here 
+        <!-- Content here -->
         <div class="card-deck">
             <div class="card">
                 <img src="https://cdn.cellphones.com.vn/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone-11-pro-max-space-select-2019.png" class="card-img-top" alt="...">
@@ -107,14 +110,14 @@
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
               </div>
               <div class="card-footer">
-                <small class="text-muted"></small>
+                <small class="text-muted">Last updated 3 mins ago</small>
               </div>
             </div>
           </div>
       </div>
       
       <div class="container">
-         Content here 
+        <!-- Content here -->
         <div class="card-deck">
             <div class="card">
               <img src="https://cdn.cellphones.com.vn/media/catalog/product/cache/7/image/1000x/040ec09b1e35df139433887a97daa66f/i/p/iphone-11-pro-max-gold-select-2019.png" class="card-img-top" alt="...">
@@ -160,4 +163,4 @@
       </div>
 
 </body>
-</html> 
+</html>
