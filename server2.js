@@ -5,8 +5,9 @@ const path = require('path')
 
 app.get('/', function(req,res){
     //res.json("hello tat ca moi nguoi nhe ")
-    var duongDanFile = path.join(__dirname, "home.html")
-    res.sendFile(duongDanFile)
+    //var duongDanFile = path.join(__dirname, "home.html")
+    //res.sendFile(duongDanFile)
+    res.render('home.ejs')
 })
 
 app.get('/login', function(req,res){
