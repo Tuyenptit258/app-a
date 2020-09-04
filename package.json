@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --inspect server2.js",
+   
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server2.js"
+    "start": "nodemon server2.js"
   },
   "author": "",
   "license": "ISC",
