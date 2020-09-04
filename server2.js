@@ -13,6 +13,10 @@ app.get('/login', function(req,res){
     var duongDanFile1 = path.join(__dirname, "login.html")
     res.sendFile(duongDanFile1)
 })
+app.get('/register', function(req,res){
+    var duongDanFile2 = path.join(__dirname, "register.html")
+    res.sendFile(duongDanFile2)
+})
 
 app.listen(process.env.PORT, function(){
     
