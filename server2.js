@@ -4,7 +4,9 @@ const app = express()
 const path = require('path')
 
 app.get('/', function(req,res){
-    res.json("hello tat ca moi nguoi nhe ")
+    //res.json("hello tat ca moi nguoi nhe ")
+    var duongDanFile = path.join(__dirname, "home.html")
+    res.sendFile(duongDanFile)
 })
 
 app.get('/home', function(req,res){
