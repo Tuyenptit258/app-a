@@ -9,10 +9,10 @@ app.get('/', function(req,res){
     res.sendFile(duongDanFile)
 })
 
-//app.get('/home', function(req,res){
- //   var duongDanFile = path.join(__dirname, "home.html")
- //   res.sendFile(duongDanFile)
-//})
+app.get('/login', function(req,res){
+    var duongDanFile1 = path.join(__dirname, "login.html")
+    res.sendFile(duongDanFile1)
+})
 
 app.listen(process.env.PORT, function(){
     
