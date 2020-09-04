@@ -2,8 +2,9 @@ const express = require('express')
 
 const app = express()
 const path = require('path')
+app.set('view-engine','ejs') 
 
-app.get('/', function(req,res){
+app.get('/', (req,res)=>{
     //res.json("hello tat ca moi nguoi nhe ")
     //var duongDanFile = path.join(__dirname, "home.html")
     //res.sendFile(duongDanFile)
