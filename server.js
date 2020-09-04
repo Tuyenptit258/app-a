@@ -67,12 +67,7 @@ app.delete('/logout',(req,res)=>{
         res.redirect('/login')
   }
 
-  /*function checkNotAuthenticated(req,res,next){
-    if(req.isAuthenticated()){
-        return res.redirect('/');
-    }
-    next()
-}*/
+
 app.set('view-engine', 'ejs')
   app.get('/',(req,res)=>{
       res.render('home.ejs')
