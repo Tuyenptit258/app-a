@@ -4,7 +4,7 @@ const express = require('express')
   const passport = require('passport')
  
   const methodOverride = require('method-override')
-  
+  //app.set('view-engine', 'ejs')
   const initializePassport = require('./passport-config')
   initializePassport(
     passport,
@@ -74,5 +74,5 @@ app.set('view-engine', 'ejs')
   })
   
   app.listen(process.env.PORT,function(){
-      console.log('Server start on')
+      console.log(users)
   })
