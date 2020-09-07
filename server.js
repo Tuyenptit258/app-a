@@ -2,7 +2,7 @@ const express = require('express')
   const app = express()
   const bcrypt = require('bcrypt')
   const passport = require('passport')
- 
+  var port     = process.env.PORT || 8500;
   const methodOverride = require('method-override')
   //app.set('view-engine', 'ejs')
   const initializePassport = require('./passport-config')
